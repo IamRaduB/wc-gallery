@@ -1,0 +1,23 @@
+@import "src/styles/mixins/focus";
+
+:host {
+  &:focus {
+    outline: none;
+  }
+}
+
+.gallery {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .alert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+}

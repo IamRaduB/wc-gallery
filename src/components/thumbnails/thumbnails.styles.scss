@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+:host {
+  width:100%;
+}
+
+.thumbnails {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
+  overflow-y: hidden;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
